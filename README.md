@@ -25,8 +25,7 @@ We will calculate two measures of accuracy for each provided submission:
  - WER - the number of incorrectly transcribed words (tokens) divided by the total number of tokens in the reference sentences.
  - CER - the number of incorrectly transcribed characters divided by the total number of characters in the reference sentences.
 
-Based on these measures, the final score will be calculated using a weighted average:
-Acc = 0.6\*WER + 0.4\*CER
+WER will be used for scoring and ranking of provided solutions.
 
 #### Text normalization 
 Both references (human transcriptions) and hypotheses (ASR systems outputs) are normalized and post-processed to minimize the probability of false errors. All punctuation marks are removed and tokens are converted to lowercase. Numeral expressions remain in the normalized format.
